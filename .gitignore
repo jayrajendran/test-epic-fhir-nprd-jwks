@@ -1,0 +1,14 @@
+# This repository is PUBLIC. Nothing secret may ever land here.
+# Private key material — blocked defensively; it does not belong in this repo at all.
+*.pem
+*.key
+*.pfx
+*.p12
+privatekey*
+*private*
+
+# Production key set is deliberately not published from this repo yet.
+jwks-prod.json
+
+.env
+.DS_Store

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>JWKS — non-production</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.6 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    max-width: 44rem; margin: 4rem auto; padding: 0 1.5rem;
+  }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9em; }
+  a { color: inherit; }
+  .muted { opacity: 0.7; font-size: 0.9em; }
+  hr { border: 0; border-top: 1px solid currentColor; opacity: 0.15; margin: 2rem 0; }
+</style>
+</head>
+<body>
+  <h1>JSON Web Key Set — non-production</h1>
+
+  <p>
+    This host serves a JSON Web Key Set used to verify signed client assertions for a
+    SMART Backend Services FHIR integration. Non-production / sandbox use only.
+  </p>
+
+  <p>
+    Key set: <a href="jwks-nonprod.json"><code>jwks-nonprod.json</code></a>
+  </p>
+
+  <hr>
+
+  <p class="muted">
+    A JWKS contains public key material only — the modulus and exponent of an RSA public key.
+    It is intended to be publicly readable; that is how the verifying party fetches it. No private
+    key, credential, or protected health information is published here, and nothing on this host
+    provides access to any system.
+  </p>
+</body>
+</html>
